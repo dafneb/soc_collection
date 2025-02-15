@@ -3,6 +3,7 @@
 - [Professor Messer](https://www.professormesser.com/)
 - [Blue Team Junior Analyst Pathway Bundle](https://www.securityblue.team/courses/blue-team-junior-analyst-pathway-bundle)
 - [CC – Certified in Cybersecurity](https://www.isc2.org/certifications/cc)
+- [Snyk Lessons](https://learn.snyk.io/catalog/?format=lesson)
 
 # List of courses partially free
 
