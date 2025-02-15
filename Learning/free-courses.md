@@ -7,4 +7,5 @@
 # List of courses partially free
 
 - [TryHackMe](https://tryhackme.com/)
+- [HackTheBox Academy](https://academy.hackthebox.com/)
 - [Blue Team Online](https://blueteamlabs.online/)
