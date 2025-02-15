@@ -6,6 +6,8 @@
 
 # List of courses partially free
 
+- [Blue Team Online](https://blueteamlabs.online/)
 - [TryHackMe](https://tryhackme.com/)
 - [HackTheBox Academy](https://academy.hackthebox.com/)
-- [Blue Team Online](https://blueteamlabs.online/)
+- [LetsDefend](https://letsdefend.io/)
+- [Pwned Labs](https://pwnedlabs.io/)
