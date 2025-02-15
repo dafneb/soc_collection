@@ -9,5 +9,6 @@
 - [Blue Team Online](https://blueteamlabs.online/)
 - [TryHackMe](https://tryhackme.com/)
 - [HackTheBox Academy](https://academy.hackthebox.com/)
+- [HackTheBox Labs](https://app.hackthebox.com/)
 - [LetsDefend](https://letsdefend.io/)
 - [Pwned Labs](https://pwnedlabs.io/)
