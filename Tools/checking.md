@@ -39,11 +39,11 @@
   - Whois
   - SOA
   - Trace
--[URLhaus](https://urlhaus.abuse.ch/)
+- [URLhaus](https://urlhaus.abuse.ch/)
   - URLs
--[SSL Blacklist (SSLBL)](https://sslbl.abuse.ch/)
+- [SSL Blacklist (SSLBL)](https://sslbl.abuse.ch/)
   - SSL
--[ThreatFox](https://threatfox.abuse.ch/)
+- [ThreatFox](https://threatfox.abuse.ch/)
   - Files
   - URLs
   - IPs
