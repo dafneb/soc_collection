@@ -5,12 +5,21 @@
   - URLs
   - IPs
   - Domains
+- [Triage](https://tria.ge/)
+  - Files
+  - Codes
+  - URLs
 - [CISCO Talos](https://www.talosintelligence.com/)
   - URLs
   - IPs
   - Domains
 - [ExtensionTotal](https://www.extensiontotal.com/)
   - Extensions
+- [urlscan.io](https://urlscan.io/)
+  - URLs
+  - Archive
+  - Screenshot
+  - Live view
 - [AbuseIPDB](https://www.abuseipdb.com/)
   - IPs
   - Domains
@@ -25,8 +34,20 @@
   - Whois
   - SOA
   - Trace
-- [urlscan.io](https://urlscan.io/)
+- [ViewDNS](https://viewdns.info/)
+  - DNS
+  - Whois
+  - SOA
+  - Trace
+-[URLhaus](https://urlhaus.abuse.ch/)
   - URLs
+-[SSL Blacklist (SSLBL)](https://sslbl.abuse.ch/)
+  - SSL
+-[ThreatFox](https://threatfox.abuse.ch/)
+  - Files
+  - URLs
+  - IPs
+  - Domains
 
 # Sandboxing
 
