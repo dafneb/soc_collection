@@ -16,7 +16,7 @@
 - Pwned Labs
 - Red Team Village
 - Root-Me
-- SecurityBkueTeam
+- SecurityBlueTeam
 - TCM Security
 - Threat Hunter Community
 - Try Hard Security
