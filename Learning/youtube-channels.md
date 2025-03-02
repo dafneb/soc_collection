@@ -9,8 +9,12 @@
 - [Sunny Classroom](https://www.youtube.com/@sunnyclassroom24)
 
 ## SOC / DFIR / Red Team
+- [13Cubed](https://www.youtube.com/@13Cubed)
+- [bluecapesec](https://www.youtube.com/@bluecapesec)
 - [BlueMonkey 4n6](https://www.youtube.com/@BlueMonkey4n6)
+- [DFIR Diva](https://www.youtube.com/@DFIRDiva)
 - [DFIRScience](https://www.youtube.com/@DFIRScience)
+- [Forensic Focus: Digital Forensics & DFIR Talk](https://www.youtube.com/@ForensicFocus)
 - [HackerSploit](https://www.youtube.com/HackerSploit)
 - [John Hammond](https://www.youtube.com/@_JohnHammond)
 - [LS111 Cyber Security Education](https://www.youtube.com/@ls111cyberEd)
