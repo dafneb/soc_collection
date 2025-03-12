@@ -13,4 +13,8 @@
 - Kali Purple
 - Parrot OS
 
+## Tools
 
+Even my plan was about create here complete list of tools for DFIR, I found already prepared amazing lists which you could check.
+
+- [DFIR Diva](https://dfirdiva.com/tools-and-distros/)
