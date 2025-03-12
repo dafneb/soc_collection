@@ -60,6 +60,8 @@
 - [Hybrid Analysis](https://www.hybrid-analysis.com/)
 - [Joe Sandbox](https://www.joesandbox.com/)
 - [Cuckoo Sandbox](https://www.cuckoo.ee/)
+- [DOCGUARD](https://www.docguard.io/)
+- [Filescan.io](https://www.filescan.io/scan)
 - [Linux Sandbox - LiSa](https://github.com/danielpoliakov/LiSa)
   - on-prem
 
