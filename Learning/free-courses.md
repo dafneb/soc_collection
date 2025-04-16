@@ -13,6 +13,8 @@
 - [Snyk Lessons](https://learn.snyk.io/catalog/?format=lesson)
   - Free Developer Security Education
   - Collection of small learning modules focused on security, security at development, vulnerabilities
+- [Blue Cape Security](https://bluecapesecurity.com/getting-started/)
+  - Many articles how to build your own DFIR lab (step-by-step)
 
 # List of courses partially free
 
