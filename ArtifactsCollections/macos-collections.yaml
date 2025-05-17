@@ -1,0 +1,198 @@
+description: System paths.
+type: include
+path_separator: '/'
+paths:
+- '/[.]fseventsd/.+'
+- '/Applications/.+/Info[.]plist'
+- '/dev/auditpipe'
+- '/etc/group'
+- '/etc/hosts[.]allow'
+- '/etc/hosts[.]deny'
+- '/etc/hosts'
+- '/etc/passwd'
+- '/etc/rc[.]d/.+'
+- '/Library/Application Support/com[.]apple[.]TCC/TCC[.]db'
+- '/Library/CoreServices/.+'
+- '/Library/Keychains/System[.]keychain'
+- '/Library/LaunchAgents/.+'
+- '/Library/LaunchDaemons/.+'
+- '/Library/Preferences/.+'
+- '/Library/Receipts/InstallHistory[.]plist'
+- '/Library/StartupItems/.+'
+- '/private/etc/rc[.]d/.+'
+- '/private/etc/hosts[.]allow'
+- '/private/etc/hosts[.]deny'
+- '/private/etc/hosts'
+- '/private/etc/passwd'
+- '/private/etc/group'
+- '/private/var/audit/.+'
+- '/private/var/db/[.]AppleSetupDone'
+- '/private/var/db/com[.]apple[.]xpc[.]launchd/disabled[.]plist'
+- '/private/var/db/dhcpclient/leases/.+'
+- '/private/var/db/diagnostics/.+'
+- '/private/var/db/dslocal/nodes/Default/groups/.+'
+- '/private/var/db/dslocal/nodes/Default/sharepoints/.+[.]plist'
+- '/private/var/db/dslocal/nodes/Default/users/.+'
+- '/private/var/db/launchd[.]db/com[.]apple[.]launchd/overrides[.]plist'
+- '/private/var/db/powerlog/Library/BatteryLife/CurrentPowerlog[.]PLSQL'
+- '/private/var/db/powerlog/Library/BatteryLife/Archives/.+'
+- '/private/var/db/shadow/hash/.+[.]state'
+- '/private/var/db/softwareupdate/journal[.]plist'
+- '/private/var/db/uuidtext/.+'
+- '/private/var/folders/.+/0/com[.]apple[.]ScreenTimeAgent/RMAdminStore-Cloud[.]sqlite'
+- '/private/var/folders/.+/0/com[.]apple[.]ScreenTimeAgent/RMAdminStore-Local[.]sqlite'
+- '/private/var/log/.+'
+- '/private/var/root/Library/Caches/locations/cache_encryptedA[.]db'
+- '/System/Library/CoreServices/.+'
+- '/System/Library/LaunchAgents/.+'
+- '/System/Library/LaunchDaemons/.+'
+- '/System/Library/Preferences/.+'
+- '/System/Library/StartupItems/.+'
+- '/var/audit/.+'
+- '/var/db/com[.]apple[.]xpc[.]launchd/disabled[.]plist'
+- '/var/db/dhcpclient/leases/.+'
+- '/var/db/diagnostics/.+'
+- '/var/db/dslocal/nodes/Default/sharepoints/.+[.]plist'
+- '/var/db/launchd[.]db/com[.]apple[.]launchd/overrides[.]plist'
+- '/var/db/powerlog/Library/BatteryLife/CurrentPowerlog.PLSQL'
+- '/var/db/powerlog/Library/BatteryLife/Archives/.+'
+- '/var/db/receipts/.+'
+- '/var/db/uuidtext/.+'
+- '/var/folders/.+/0/com[.]apple[.]ScreenTimeAgent/RMAdminStore-Cloud[.]sqlite'
+- '/var/folders/.+/0/com[.]apple[.]ScreenTimeAgent/RMAdminStore-Local[.]sqlite'
+- '/var/log/.+'
+- '.+/Library/Accounts/.+[.]sqlite'
+- '.+/Library/Application Support/com[.]apple[.]backgroundtaskmanagementagent/backgrounditems[.]btm'
+- '.+/Library/Application Support/com[.]apple[.]sharedfilelist/.+[.]sfl'
+- '.+/Library/Application Support/com[.]apple[.]sharedfilelist/.+[.]sfl2'
+- '.+/Library/Application Support/com[.]apple[.]TCC/TCC[.]db'
+- '.+/Library/Application Support/Knowledge/knowledgeC[.]db'
+- '.+/Library/Caches/.+'
+- '.+/Library/Containers/.+/Preferences/.+[.]plist'
+- '.+/Library/Containers/.+/Cache/.+'
+- '.+/Library/Containers/com[.]apple[.]corerecents[.]recentsd/Data/Library/Recents/Recents'
+- '.+/Library/Keychains/.+'
+- '.+/Library/LaunchAgents/.+'
+- '.+/Library/Logs/fsck_hfs[.]log'
+- '.+/Library/Preferences/.+[.]plist'
+- '.+/Library/SyncedPreferences/com[.]apple[.]wifi[.]WiFiAgent[.]plist'
+- '.+/[.]ssh/known_hosts'
+- '.+/[.]ssh/authorized_hosts'
+---
+description: Third-Party Kernel Extensions.
+type: include
+path_separator: '/'
+paths:
+- '/private/var/db/loadedkextmt[.]plist'
+- '/Library/Apple/System/Library/Extensions/.+'
+- '/System/Library/Extensions/.+'
+- '/Library/Extensions/.+'
+- '/Library/StagedExtensions/.+'
+- '/Library/SystemExtensions/.+'
+- '/Library/.+/Extensions/.+'
+---
+description: Terminal history.
+type: include
+path_separator: '/'
+paths:
+- '/root/[.].+history'
+- '/Users/.+/[.].+history'
+---
+description: Apple Messages.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Messages/chat[.]db'
+---
+description: Apple Contacts.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Application Support/AddressBook/AddressBook-v22[.]abcddb'
+- '.+/Library/Application Support/AddressBook/Sources/.+/AddressBook-v22[.]abcddb'
+- '.+/Library/Application Support/AddressBook/Sources/.+/Metadata/.+'
+---
+description: Apple Call History.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Application Support/CallHistoryDB/CallHistory[.]storedata'
+---
+description: Apple Mail.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Mail/V\d{1,2}/.+/.+[.]mbox'
+- '.+/Library/Mail/V\d{1,2}/.+/[.]mboxCache[.]plist'
+- '.+/Library/Containers/com[.]apple[.]mail/.+'
+- '.+/Library/Mail/V\d{1,2}/MailData/Envelope Index.+'
+---
+description: Apple Calendar.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Calendars/.+[.]calendar'
+- '.+/Library/Calendars/.+[.]caldav'
+- '.+/Library/Calendars/Calendar Cache.+'
+---
+description: Apple Notes.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Group Containers/group[.]com[.]apple[.]notes/NoteStore[.]sqlite'
+- '.+/Library/Containers/com[.]apple[.]Notes/notes[.]sqlite'
+---
+description: Apple Reminders.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Reminders/.+/Data-.+[.]sqlite'
+---
+description: Google Chrome paths.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/.+Support/Google/Chrome/Default/.+'
+- '.+/Library/.+Support/Google/Chrome/Default/History.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Cookies.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Bookmarks.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Extensions/.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Extensions/Last.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Extensions/Shortcuts.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Extensions/Top.+'
+- '.+/Library/.+Support/Google/Chrome/Default/Extensions/Visited.+'
+---
+description: Safari Browser paths.
+type: include
+path_separator: '/'
+paths:
+- '.+/Library/Safari/.+'
+- '.+/Library/Containers/com[.]apple[.]Safari/Data/Library/Caches/com[.]apple[.]Safari/.+'
+- '.+/Library/Cookies/Cookies[.]binarycookies'
+- '.+/Library/Safari/Downloads[.]plist'
+---
+description: OneDrive.
+type: include
+path_separator: '/'
+paths:
+- '/Users/.+/Library/Logs/OneDrive/.+'
+---
+description: Other Paths.
+type: include
+path_separator: '/'
+paths:
+- '.+/places[.]sqlite.+'
+- '.+/downloads[.]sqlite.+'
+---
+description: Bencoded files.
+type: include
+path_separator: '/'
+paths:
+- '/.+[.]torrent'
+---
+description: iCloud files.
+type: exclude
+path_separator: '/'
+paths:
+- '/Users/.+/iCloud Drive.+'
+- '/Users/.+/[.]Trash/iCloud Drive.+'
