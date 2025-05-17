@@ -1,4 +1,4 @@
-# Location of the artifacts at operation systems
+# Location of the artifacts at operating systems
 
 Prepared filters which could be used as [Collection Filters](https://plaso.readthedocs.io/en/latest/sources/user/Collection-Filters.html#yaml-based-filter-file-format) during parsing of disk image with plaso.
 
