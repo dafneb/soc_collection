@@ -72,5 +72,3 @@
 - [FreeFormatter](https://freeformatter.com/encoders-cryptography.html)
   - Hashing
   - Encoding / Decoding
-
-
