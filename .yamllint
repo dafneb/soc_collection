@@ -13,7 +13,8 @@ rules:
   comments:
     min-spaces-from-content: 1
   comments-indentation: false
-  document-start: disable
+  document-start:
+    present: true
   line-length:
     max: 160
   braces:

@@ -1,0 +1,29 @@
+---
+description: System paths.
+type: include
+path_separator: '/'
+paths:
+- '/etc/cron.+'
+- '/etc/group'
+- '/etc/hostname'
+- '/etc/hosts[.]allow'
+- '/etc/hosts[.]deny'
+- '/etc/hosts'
+- '/etc/network/interfaces'
+- '/etc/network/interfaces.d/.+'
+- '/etc/os-release'
+- '/etc/passwd'
+- '/etc/sudoers'
+- '/etc/timezone'
+- '/var/log/.+'
+- '/var/spool/cron/crontabs/.+'
+---
+description: User's bash history.
+type: include
+path_separator: '/'
+paths:
+- '/home/.+/.bashrc'
+- '/home/.+/.bash_history'
+- '/root/.bashrc'
+- '/root/.bash_history'
+...
