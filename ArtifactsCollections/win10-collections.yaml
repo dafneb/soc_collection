@@ -1,0 +1,63 @@
+---
+description: System paths.
+type: include
+path_separator: '\'
+paths:
+- '%SYSTEMROOT%\\Tasks\\.+'
+- '%SYSTEMROOT%\\Prefetch\\.+'
+- '%SYSTEMROOT%\\System32\\sru\\.+'
+- '%SYSTEMROOT%\\System32\\winevt\\Logs\\.+'
+- '%SYSTEMROOT%\\System32\\config\\.+[.]evt'
+- '%SYSTEMROOT%\\System32\\Tasks\\.+'
+- '%SYSTEMROOT%\\System32\\Logfiles\\W3SVC1\\.+'
+- '%SYSTEMROOT%\\Appcompat\\Programs\\.+'
+- '%SYSTEMROOT%\\SchedLgU[.]txt'
+- '%SYSTEMROOT%\\inf\\setupapi[.]dev[.]log'
+- '%SYSTEMROOT%\\System32\\drivers\\etc\\hosts'
+- '%SYSTEMROOT%\\System32\\config\\SAM'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE'
+- '%SYSTEMROOT%\\System32\\config\\SECURITY'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE'
+- '%SYSTEMROOT%\\System32\\config\\SAM[.]LOG1'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE[.]LOG1'
+- '%SYSTEMROOT%\\System32\\config\\SECURITY[.]LOG1'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE[.]LOG1'
+- '%SYSTEMROOT%\\System32\\config\\SAM[.]LOG2'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE[.]LOG2'
+- '%SYSTEMROOT%\\System32\\config\\SECURITY[.]LOG2'
+- '%SYSTEMROOT%\\System32\\config\\SOFTWARE[.]LOG2'
+---
+description: Program Data.
+type: include
+path_separator: '\'
+paths:
+- '%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\.+'
+---
+description: Drive Root.
+type: include
+path_separator: '\'
+paths:
+- '%SYSTEMDRIVE%\\$Recycle[.]Bin\\.+\\$I.+'
+- '%SYSTEMDRIVE%\\$Recycle[.]Bin\\$I.+'
+- '%SYSTEMDRIVE%\\$LogFile'
+- '%SYSTEMDRIVE%\\$MFT'
+---
+description: User Profiles.
+type: include
+path_separator: '\'
+paths:
+- '%SYSTEMDRIVE%\\Users\\.+\\NTUser[.]DAT'
+- '%SYSTEMDRIVE%\\Users\\.+\\NTUser[.]DAT[.]LOG1'
+- '%SYSTEMDRIVE%\\Users\\.+\\NTUser[.]DAT[.]LOG2'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadline\\ConsoleHost_history[.]txt'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Windows\\WebCache\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Windows\\Explorer\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Windows\\UsrClass[.]dat'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Windows\\UsrClass[.]dat[.]LOG1'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Windows\\UsrClass[.]dat[.]LOG2'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\ConnectedDevicesPlatform\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History\\.+'
+- '%SYSTEMDRIVE%\\Users\\.+\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\History\\.+'
+...
