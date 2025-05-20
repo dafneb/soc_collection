@@ -1,5 +1,4 @@
 name: dfirtimeline
-version: '3.8'
 
 services:
   dfir-opensearch:
@@ -19,9 +18,9 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - /opt/dfir/opensearch/data:/usr/share/opensearch/data
-      - /opt/dfir/opensearch/plugins:/usr/share/opensearch/plugins
-      - /opt/dfir/opensearch/config:/usr/share/opensearch/config
+      - dfirtimeline-openasearch-data:/usr/share/opensearch/data
+      - dfirtimeline-openasearch-plugins:/usr/share/opensearch/plugins
+      - dfirtimeline-openasearch-config:/usr/share/opensearch/config
     ports:
       - 9200:9200 # REST API
       - 9600:9600 # Performance Analyzer
@@ -31,7 +30,14 @@ services:
     environment:
       - 'OPENSEARCH_HOSTS=["https://dfir-opensearch:9200"]'
     volumes:
-      - /opt/dfir/opensearch-dashboards/config:/usr/share/opensearch-dashboards/config
-      - /opt/dfir/opensearch-dashboards/data:/usr/share/opensearch-dashboards/data
+      - dfirtimeline-dashboard-config:/usr/share/opensearch-dashboards/config
+      - dfirtimeline-dashboard-data:/usr/share/opensearch-dashboards/data
     ports:
       - 5601:5601 # Dashboards
+
+volumes:
+  dfirtimeline-openasearch-config:
+  dfirtimeline-openasearch-data:
+  dfirtimeline-openasearch-plugins:
+  dfirtimeline-dashboard-config:
+  dfirtimeline-dashboard-data:
