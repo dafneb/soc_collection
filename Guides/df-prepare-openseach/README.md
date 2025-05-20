@@ -80,11 +80,11 @@ Second step is to define volumes for services.
 
 ```yaml
 volumes:
-  dfirtimeline-openasearch-config:
-  dfirtimeline-openasearch-data:
-  dfirtimeline-openasearch-plugins:
-  dfirtimeline-dashboard-config:
-  dfirtimeline-dashboard-data:
+  openasearch-config:
+  openasearch-data:
+  openasearch-plugins:
+  dashboard-config:
+  dashboard-data:
 ```
 
 #### OpenSearch - Environment
@@ -124,9 +124,9 @@ Mounting volumes for OpenSearch.
 
 ```yaml
     volumes:
-      - dfirtimeline-openasearch-data:/usr/share/opensearch/data
-      - dfirtimeline-openasearch-plugins:/usr/share/opensearch/plugins
-      - dfirtimeline-openasearch-config:/usr/share/opensearch/config
+      - openasearch-data:/usr/share/opensearch/data
+      - openasearch-plugins:/usr/share/opensearch/plugins
+      - openasearch-config:/usr/share/opensearch/config
 ```
 
 #### OpenSearch - Ports
@@ -152,8 +152,8 @@ Mounting volumes for OpenSearch Dashboards.
 
 ```yaml
     volumes:
-      - dfirtimeline-dashboard-config:/usr/share/opensearch-dashboards/config
-      - dfirtimeline-dashboard-data:/usr/share/opensearch-dashboards/data
+      - dashboard-config:/usr/share/opensearch-dashboards/config
+      - dashboard-data:/usr/share/opensearch-dashboards/data
 ```
 
 #### Dashboards - Ports
