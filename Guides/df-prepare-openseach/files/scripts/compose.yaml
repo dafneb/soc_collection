@@ -18,9 +18,9 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - openasearch-data:/usr/share/opensearch/data
-      - openasearch-plugins:/usr/share/opensearch/plugins
-      - openasearch-config:/usr/share/opensearch/config
+      - opensearch-data:/usr/share/opensearch/data
+      - opensearch-plugins:/usr/share/opensearch/plugins
+      - opensearch-config:/usr/share/opensearch/config
     ports:
       - 9200:9200 # REST API
       - 9600:9600 # Performance Analyzer
@@ -36,8 +36,8 @@ services:
       - 5601:5601 # Dashboards
 
 volumes:
-  openasearch-config:
-  openasearch-data:
-  openasearch-plugins:
+  opensearch-config:
+  opensearch-data:
+  opensearch-plugins:
   dashboard-config:
   dashboard-data:

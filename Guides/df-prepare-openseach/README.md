@@ -80,9 +80,9 @@ Second step is to define volumes for services.
 
 ```yaml
 volumes:
-  openasearch-config:
-  openasearch-data:
-  openasearch-plugins:
+  opensearch-config:
+  opensearch-data:
+  opensearch-plugins:
   dashboard-config:
   dashboard-data:
 ```
@@ -124,9 +124,9 @@ Mounting volumes for OpenSearch.
 
 ```yaml
     volumes:
-      - openasearch-data:/usr/share/opensearch/data
-      - openasearch-plugins:/usr/share/opensearch/plugins
-      - openasearch-config:/usr/share/opensearch/config
+      - opensearch-data:/usr/share/opensearch/data
+      - opensearch-plugins:/usr/share/opensearch/plugins
+      - opensearch-config:/usr/share/opensearch/config
 ```
 
 #### OpenSearch - Ports
