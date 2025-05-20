@@ -21,8 +21,8 @@ due to support of queries and other features.
 ## Prerequisites
 
 Installed and running:
-- Docker Engine
-- Docker Compose
+- [Docker Engine](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Guide
 
@@ -33,22 +33,7 @@ First at all, we need to create structure of directories.
 Create a directory for compose file.
 
 ```bash
-sudo mkdir /opt/dfir/docker-compose
-```
-
-Create directories for OpenSearch.
-
-```bash
-sudo mkdir /opt/dfir/opensearch/data
-sudo mkdir /opt/dfir/opensearch/plugins
-sudo mkdir /opt/dfir/opensearch/config
-```
-
-Create directories for OpenSearch Dashboards.
-
-```bash
-sudo mkdir /opt/dfir/opensearch-dashboards/config
-sudo mkdir /opt/dfir/opensearch-dashboards/data
+sudo mkdir -p /opt/dfir/dfirtimeline
 ```
 
 *Note: I am using here `/opt/dfir` as a main directory for all my DFIR tools.
@@ -61,14 +46,13 @@ with them properly.*
 just quick overview about my usual settings which works for me really well.*
 
 ```bash
-sudo nano /opt/dfir/docker-compose/compose.yaml
+sudo nano /opt/dfir/dfirtimeline/compose.yaml
 ```
 
-#### Name of application and version
+#### Name of application
 
 ```yaml
 name: dfirtimeline
-version: '3.8'
 ```
 
 #### Basic definition of services
@@ -88,6 +72,19 @@ services:
   dfir-dashboards:
     image: opensearchproject/opensearch-dashboards:3.0.0
     container_name: dfir-dashboards
+```
+
+#### Volumes for services
+
+Second step is to define volumes for services.
+
+```yaml
+volumes:
+  dfirtimeline-openasearch-config:
+  dfirtimeline-openasearch-data:
+  dfirtimeline-openasearch-plugins:
+  dfirtimeline-dashboard-config:
+  dfirtimeline-dashboard-data:
 ```
 
 #### OpenSearch - Environment
@@ -127,9 +124,9 @@ Mounting volumes for OpenSearch.
 
 ```yaml
     volumes:
-      - /opt/dfir/opensearch/data:/usr/share/opensearch/data
-      - /opt/dfir/opensearch/plugins:/usr/share/opensearch/plugins
-      - /opt/dfir/opensearch/config:/usr/share/opensearch/config
+      - dfirtimeline-openasearch-data:/usr/share/opensearch/data
+      - dfirtimeline-openasearch-plugins:/usr/share/opensearch/plugins
+      - dfirtimeline-openasearch-config:/usr/share/opensearch/config
 ```
 
 #### OpenSearch - Ports
@@ -155,8 +152,8 @@ Mounting volumes for OpenSearch Dashboards.
 
 ```yaml
     volumes:
-      - /opt/dfir/opensearch-dashboards/config:/usr/share/opensearch-dashboards/config
-      - /opt/dfir/opensearch-dashboards/data:/usr/share/opensearch-dashboards/data
+      - dfirtimeline-dashboard-config:/usr/share/opensearch-dashboards/config
+      - dfirtimeline-dashboard-data:/usr/share/opensearch-dashboards/data
 ```
 
 #### Dashboards - Ports
@@ -176,7 +173,7 @@ OpenSearch and OpenSearch Dashboards.
 Everything should be ready to start OpenSearch.
 
 ```bash
-cd /opt/dfir/docker-compose
+cd /opt/dfir/dfirtimeline
 sudo docker compose up -d
 ```
 
