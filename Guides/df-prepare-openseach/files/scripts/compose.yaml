@@ -18,9 +18,9 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - dfirtimeline-openasearch-data:/usr/share/opensearch/data
-      - dfirtimeline-openasearch-plugins:/usr/share/opensearch/plugins
-      - dfirtimeline-openasearch-config:/usr/share/opensearch/config
+      - openasearch-data:/usr/share/opensearch/data
+      - openasearch-plugins:/usr/share/opensearch/plugins
+      - openasearch-config:/usr/share/opensearch/config
     ports:
       - 9200:9200 # REST API
       - 9600:9600 # Performance Analyzer
@@ -30,14 +30,14 @@ services:
     environment:
       - 'OPENSEARCH_HOSTS=["https://dfir-opensearch:9200"]'
     volumes:
-      - dfirtimeline-dashboard-config:/usr/share/opensearch-dashboards/config
-      - dfirtimeline-dashboard-data:/usr/share/opensearch-dashboards/data
+      - dashboard-config:/usr/share/opensearch-dashboards/config
+      - dashboard-data:/usr/share/opensearch-dashboards/data
     ports:
       - 5601:5601 # Dashboards
 
 volumes:
-  dfirtimeline-openasearch-config:
-  dfirtimeline-openasearch-data:
-  dfirtimeline-openasearch-plugins:
-  dfirtimeline-dashboard-config:
-  dfirtimeline-dashboard-data:
+  openasearch-config:
+  openasearch-data:
+  openasearch-plugins:
+  dashboard-config:
+  dashboard-data:
