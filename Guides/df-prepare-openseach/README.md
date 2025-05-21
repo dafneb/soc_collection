@@ -203,7 +203,26 @@ Dashboards. Go to `Management` -> `Dashboards Management` -> `Advanced settings`
 
 ### 6. Create separate account for log analyzer
 
-...
+You can create a separate account for log analyzer.
+Go to `Management` -> `Security` -> `Roles`.
+
+![Menu](files/img/article-0005.jpg "Menu")
+
+Click on roles `logstash`. You can see the list of permissions
+for this role. Click on `Duplicate role` button on top right corner.
+
+![Logstash role](files/img/article-0006.jpg "Logstash role")
+
+Change the name of the role and adjust index permissions.
+
+In my case, I am using *loganalyser* as name of the role and
+`dfir-*` as index pattern.
+
+![Duplicated role](files/img/article-0007.jpg "Duplicated role")
+
+After role is created, you can create a new user and map this user to the role.
+
+![List of roles](files/img/article-0008.jpg "List of roles")
 
 ### 7. Get Root CA certificate from OpenSearch
 
