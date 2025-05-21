@@ -222,7 +222,7 @@ In my case, I am using *loganalyser* as name of the role and
 
 Add additional permission for indices: `indices:admin/get`.
 
-![Permissions](files/img/article-0008.jpg "Permissions")
+![Permissions](files/img/article-0009.jpg "Permissions")
 
 After role is created, you can create a new user and map this user to the role.
 
