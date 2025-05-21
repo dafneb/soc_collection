@@ -220,6 +220,10 @@ In my case, I am using *loganalyser* as name of the role and
 
 ![Duplicated role](files/img/article-0007.jpg "Duplicated role")
 
+Add additional permission for indices: `indices:admin/get`.
+
+![Permissions](files/img/article-0008.jpg "Permissions")
+
 After role is created, you can create a new user and map this user to the role.
 
 ![List of roles](files/img/article-0008.jpg "List of roles")
@@ -244,11 +248,11 @@ Command to run `psort.py` with OpenSearch output.
 
 ```bash
 psort.py -o opensearch \
---output-time_zone <timezone> \
+--output_time_zone <timezone> \
 --opensearch-server localhost \
 --opensearch-port 9200 \
 --opensearch-user loganalyser \
---opensearch-password <loganalyser-password> \
+--opensearch-password '<loganalyser-password>' \
 --index_name dfir-<case-name> \
 --opensearch-mappings /opt/dfir/dfirtimeline/opensearch.mappings \
 --ca_certificates_file_path /opt/dfir/dfirtimeline/root-ca.pem \
