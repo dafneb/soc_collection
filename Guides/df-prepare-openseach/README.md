@@ -208,7 +208,7 @@ Go to `Management` -> `Security` -> `Roles`.
 
 ![Menu](files/img/article-0005.jpg "Menu")
 
-Click on roles `logstash`. You can see the list of permissions
+Click on role `logstash`. You can see the list of permissions
 for this role. Click on `Duplicate role` button on top right corner.
 
 ![Logstash role](files/img/article-0006.jpg "Logstash role")
@@ -226,8 +226,32 @@ After role is created, you can create a new user and map this user to the role.
 
 ### 7. Get Root CA certificate from OpenSearch
 
-...
+Then run the following command to get the Root CA certificate.
+
+```bash
+sudo docker cp dfir-opensearch:/usr/share/opensearch/config/root-ca.pem /opt/dfir/dfirtimeline/root-ca.pem
+```
+
+*Note: You can use this certificate for TLS connection to OpenSearch*
 
 ### 8. Done!
 
 You can use OpenSearch for your forensic analysis.
+But you need to download also [opensearch.mappings](files/scripts/opensearch.mappings) file.
+
+Command to run `psort.py` with OpenSearch output.
+
+```bash
+psort.py -o opensearch \
+--output-time_zone <timezone> \
+--opensearch-server localhost \
+--opensearch-port 9200 \
+--opensearch-user loganalyser \
+--opensearch-password <loganalyser-password> \
+--index_name dfir-<case-name> \
+--opensearch-mappings /opt/dfir/dfirtimeline/opensearch.mappings \
+--ca_certificates_file_path /opt/dfir/dfirtimeline/root-ca.pem \
+--use_ssl \
+<path-to-plaso-archive> \
+<filter>
+```
