@@ -194,7 +194,10 @@ Then select your tenant. It's fine just use global tenant.
 
 ### 5. Advanced settings
 
-...
+After successful login, you can adjust some advanced settings in OpenSearch
+Dashboards. Go to `Management` -> `Dashboards Management` -> `Advanced settings`.
+
+![Advanced settings](files/img/article-0004.jpg "Advanced settings")
 
 *Note: I am 'dark mode' person. So, next screenshots will be in dark mode.*
 
@@ -202,6 +205,10 @@ Then select your tenant. It's fine just use global tenant.
 
 ...
 
-### 7. Done!
+### 7. Get Root CA certificate from OpenSearch
+
+...
+
+### 8. Done!
 
 You can use OpenSearch for your forensic analysis.
