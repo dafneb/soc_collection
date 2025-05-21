@@ -184,6 +184,14 @@ the initial admin password. You can find it in the `.env` file.
 
 ![OpenSearch Dashboards login](files/img/article-0001.jpg "OpenSearch Dashboards login")
 
+You should see the OpenSearch Dashboards welcome screen after successful login.
+
+![OpenSearch Dashboards welcome screen](files/img/article-0002.jpg "OpenSearch Dashboards welcome screen")
+
+Then select your tenant. It's fine just use global tenant.
+
+![Select your tenant](files/img/article-0003.jpg "Select your tenant")
+
 ### 5. Advanced settings
 
 ...
@@ -192,17 +200,7 @@ the initial admin password. You can find it in the `.env` file.
 
 ### 6. Create separate account for log analyzer
 
-#### xxx
-
-#### xxx
-
-#### xxx
-
-#### xxx
-
-#### xxx
-
-#### xxx
+...
 
 ### 7. Done!
 
