@@ -182,7 +182,7 @@ sudo docker compose up -d
 Open your browser and go to `http://localhost:5601`. Try to log in with
 the initial admin password. You can find it in the `.env` file.
 
-...
+![OpenSearch Dashboards login](files/img/article-0001.jpg "OpenSearch Dashboards login")
 
 ### 5. Advanced settings
 
@@ -192,7 +192,17 @@ the initial admin password. You can find it in the `.env` file.
 
 ### 6. Create separate account for log analyzer
 
-...
+#### xxx
+
+#### xxx
+
+#### xxx
+
+#### xxx
+
+#### xxx
+
+#### xxx
 
 ### 7. Done!
 
