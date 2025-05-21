@@ -240,6 +240,7 @@ You can use OpenSearch for your forensic analysis.
 But you need to download also [opensearch.mappings](files/scripts/opensearch.mappings) file.
 
 Command to run `psort.py` with OpenSearch output.
+`psort.py` is a part of [Plaso](https://plaso.readthedocs.io/en/latest/) project.
 
 ```bash
 psort.py -o opensearch \
